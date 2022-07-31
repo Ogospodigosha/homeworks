@@ -1,0 +1,18 @@
+.affair {
+    display: flex;
+}
+.item {
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 100px;
+}
+.button {
+    margin: 10px;
+    margin-left: 0;
+    width: 100px;
+}
+.priority {
+    margin-top: 5px;
+    margin-right: 40px;
+    width: 100px;
+}
