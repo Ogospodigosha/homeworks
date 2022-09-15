@@ -1,3 +1,40 @@
 .message {
+    display: flex;
 
+}
+.name {
+    color: #61dafb;
+}
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    align-self: flex-end;
+    margin-right: 15px;
+}
+.other {
+    background-color: #cbcba2;
+    padding: 10px;
+    border-radius: 5px 5px 5px 0;
+    position: relative;
+}
+.other::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: -16px;
+    bottom: 0px; /* Положение треугольника */
+    border: 10px solid transparent;
+    border-right: 10px solid #cbcba2;
+    border-bottom: 10px solid #cbcba2;
+}
+
+
+.writing {
+    min-width: 100px;
+    max-width: 220px;
+    word-wrap: break-word;
+}
+.time {
+    display: flex;
+    justify-content: flex-end;
 }

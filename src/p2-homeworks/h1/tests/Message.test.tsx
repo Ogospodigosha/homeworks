@@ -5,10 +5,10 @@ import Message from '../Message'
 test('find text "test message name"', () => {
     const {getByText} = render((
         <Message
-            // avatar=""
-            // name="test message name"
-            // message=""
-            // time=""
+            avatar=""
+            name="test message name"
+            message=""
+            time=""
         />
     ))
     const linkElement = getByText(/test message name/i)
@@ -17,10 +17,10 @@ test('find text "test message name"', () => {
 test('find text "test message"', () => {
     const {getByText} = render((
         <Message
-            // avatar=""
-            // name=""
-            // message="test message"
-            // time=""
+            avatar=""
+            name=""
+            message="test message"
+            time=""
         />
     ))
     const linkElement = getByText(/test message/i)
@@ -29,10 +29,10 @@ test('find text "test message"', () => {
 test('find text "test message time"', () => {
     const {getByText} = render((
         <Message
-            // // avatar=""
-            // name=""
-            // message=""
-            // time="test message time"
+            avatar=""
+            name=""
+            message=""
+            time="test message time"
         />
     ))
     const linkElement = getByText(/test message time/i)
