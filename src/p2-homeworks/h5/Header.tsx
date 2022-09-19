@@ -1,9 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
     return (
         <div>
-            // add NavLinks
+            {/*<NavLink to={"/"}>PRE_JUNIOR</NavLink>*/}
+            {/*<NavLink to={"/"}>JUNIOR</NavLink>*/}
+            {/*<NavLink to={"/"}>JUNIOR+</NavLink>*/}
 
         </div>
     )

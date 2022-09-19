@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    width: 280px;
+    transition-duration: 500ms;
+    transform: translate(-220px);
+}
+.header:hover {
+    transition-duration: 500ms;
+    transform: translate(0);
+}
+.block {
+    width: 21px;
+    height: 21px;
+    margin-left: 10px;
+    background-color: blue;
+}
