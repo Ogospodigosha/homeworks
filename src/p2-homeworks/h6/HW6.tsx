@@ -10,7 +10,9 @@ function HW6() {
         saveState<string>('editable-span-value', value)
     }
     const restore = () => {
+        setValue(restoreState('editable-span-value', value))
         // setValue()
+
     }
 
     return (
@@ -24,6 +26,7 @@ function HW6() {
                     value={value}
                     onChangeText={setValue}
                     spanProps={{children: value ? undefined : 'enter text...'}}
+
                 />
             </div>
             <SuperButton onClick={save}>save</SuperButton>
