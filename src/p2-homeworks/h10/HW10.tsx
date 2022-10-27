@@ -8,10 +8,10 @@ import s from "../h10/spinner.module.css"
 function HW10() {
     // useSelector, useDispatch
     const dispatch = useDispatch()
-    const loading = false
-    let isLoading = useSelector<AppStoreType,  StateType>(state => state.loading)
-     let download = isLoading.isLoading
-    console.log(download)
+
+    let isLoading = useSelector<AppStoreType,  boolean>(state => state.loading.isLoading)
+
+
     const setLoading = () => {
         // dispatch
         // setTimeout
@@ -28,7 +28,7 @@ function HW10() {
 
             {/*should work (должно работать)*/}
             {/*{loading*/}
-            {download
+            {isLoading
                 ? (
                     // <div>крутилка...</div>
                     <div className={s.ldsRing}>
